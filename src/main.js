@@ -15,14 +15,7 @@ Vue.config.productionTip = false
 //Using firebase in vue 
 // Vue.use(VueFire)
 
-const firebaseConfig = {
-  apiKey: "AIzaSyAlyTSn7-hZouHMeCf2SEMzKz83KcPmg70",
-  authDomain: "blogvuefirbase.firebaseapp.com",
-  databaseURL: "https://blogvuefirbase.firebaseio.com",
-  projectId: "blogvuefirbase",
-  storageBucket: "blogvuefirbase.appspot.com",
-  messagingSenderId: "441545201742",
-  appId: "1:441545201742:web:6057e9e3238af3326fcb1f"
+const firebaseConfig = { 
 };
 firebase.initializeApp(firebaseConfig);
 
