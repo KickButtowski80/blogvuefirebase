@@ -6,7 +6,7 @@ import Routes from './routes'
 // import VueFire from 'vuefire'
 import firebase from 'firebase/app'
 import 'firebase/firestore'
-
+require('dotenv').config()
 
  
 Vue.config.productionTip = false
@@ -15,7 +15,14 @@ Vue.config.productionTip = false
 //Using firebase in vue 
 // Vue.use(VueFire)
 
-const firebaseConfig = { 
+const firebaseConfig = {
+  apiKey: process.env.apiKey ,
+  authDomain: process.env.authDomain,
+  databaseURL: process.env.databaseURL,
+  projectId:"blogvuefirbase",
+  storageBucket: process.env.storageBucket,
+  messagingSenderId: process.env.messagingSenderId,
+  appId: process.env.appId
 };
 firebase.initializeApp(firebaseConfig);
 
